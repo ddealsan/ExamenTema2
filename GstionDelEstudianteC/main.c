@@ -13,3 +13,12 @@ struct Estudiante {
     int numMaterias;
 };
 
+void mostrarEstudiante(struct Estudiante estudiante) {
+    printf("Nombre: %s\n", estudiante.nombre);
+    printf("Edad: %d\n", estudiante.edad);
+    printf("Promedio: %f\n", estudiante.promedio);
+    printf("Materias:\n");
+    for (int i = 0; i < estudiante.numMaterias; ++i) {
+        printf(" %s\n", estudiante.materias[i]);
+    }
+}

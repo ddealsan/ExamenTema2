@@ -18,3 +18,16 @@ struct Estudiante {
     struct Asistencia asistencias[MAX_ASISTENCIAS];
     int numAsistencias;
 };
+
+void mostrarEstudiante(const struct Estudiante* estudiante) {
+    printf("Nombre: %s\n", estudiante->nombre);
+    printf("Edad: %d\n", estudiante->edad);
+    printf("Promedio: %f\n", estudiante->promedio);
+    printf("Asistencias:\n");
+    for (int i = 0; i < estudiante->numAsistencias; ++i) {
+        printf("Fecha: %s | Materia: %s | Estado: %s\n",
+               estudiante->asistencias[i].fecha,
+               estudiante->asistencias[i].materia,
+               estudiante->asistencias[i].estado);
+    }
+}

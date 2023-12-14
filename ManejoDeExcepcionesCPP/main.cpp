@@ -27,3 +27,14 @@ struct Asistencia {
     string materia;
     string estado;
 };
+
+void mostrarEstudiante(const Estudiante& estudiante) {
+    cout << "Nombre: " << estudiante.nombre << endl;
+    cout << "Edad: " << estudiante.edad << endl;
+    cout << "Promedio: " << estudiante.promedio << endl;
+    cout << "Asistencias: " << endl;
+    for (const auto& asistencia : estudiante.asistencias) {
+        cout << "Fecha: " << asistencia.fecha << " | Materia: " << asistencia.materia << " | Estado: " << asistencia.estado << endl;
+    }
+}
+

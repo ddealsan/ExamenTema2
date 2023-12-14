@@ -31,3 +31,14 @@ void mostrarEstudiante(const struct Estudiante* estudiante) {
                estudiante->asistencias[i].estado);
     }
 }
+
+void registrarAsistencia(struct Estudiante* estudiante, const char* fecha, const char* materia, const char* estado) {
+    if (estudiante->numAsistencias < MAX_ASISTENCIAS) {
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].fecha, fecha);
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].materia, materia);
+        strcpy(estudiante->asistencias[estudiante->numAsistencias].estado, estado);
+        estudiante->numAsistencias++;
+    } else {
+        fprintf(stderr, "Error: No se pueden agregar más asistencias.\n");
+    }
+}

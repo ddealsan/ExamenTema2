@@ -12,7 +12,7 @@ void mostrarEstudiante(struct Estudiante estudiante) {
     printf("Edad: %d\n", estudiante.edad);
     printf("Promedio: %f\n", estudiante.promedio);
 }
-
+//
 int main() {
     struct Estudiante estudiante1;
     strcpy(estudiante1.nombre, "Juan");

@@ -8,3 +8,11 @@ struct Asistencia {
     char materia[50];
     char estado[20];
 };
+
+struct Estudiante {
+    char nombre[50];
+    int edad;
+    float promedio;
+    struct Asistencia asistencias[MAX_ASISTENCIAS];
+    int numAsistencias;
+};

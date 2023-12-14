@@ -8,13 +8,22 @@ struct Estudiante{
     string nombre;
     int edad;
     float promedio;
+    vector<string> materias;
 };
 
 void mostrarEstudiante(Estudiante estudiante){
     cout << "Nombre: " << estudiante.nombre << endl;
     cout << "Edad: " << estudiante.edad << endl;
     cout << "Promedio: " << estudiante.promedio << endl;
+    cout << "Materias: " << endl;
+    for (const auto& materia : estudiante.materias) {
+        std::cout << " " << materia;
+        }
 }
+
+
+
+
 
 int main(){
     Estudiante estudiante1;

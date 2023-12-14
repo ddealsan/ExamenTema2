@@ -32,3 +32,17 @@ void agregarMateria(struct Estudiante* estudiante, const char* materia) {
         printf("Error: No se pueden agregar más materias.\n");
     }
 }
+
+
+void eliminarMateria(struct Estudiante* estudiante, const char* materia) {
+    for (int i = 0; i < estudiante->numMaterias; ++i) {
+        if (strcmp(estudiante->materias[i], materia) == 0) {
+            for (int j = i; j < estudiante->numMaterias - 1; ++j) {
+                strcpy(estudiante->materias[j], estudiante->materias[j + 1]);
+            }
+            estudiante->numMaterias--;
+            return;
+        }
+    }
+    printf("Error: La materia no se encontró.\n");
+}

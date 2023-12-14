@@ -22,3 +22,13 @@ void mostrarEstudiante(struct Estudiante estudiante) {
         printf(" %s\n", estudiante.materias[i]);
     }
 }
+
+
+void agregarMateria(struct Estudiante* estudiante, const char* materia) {
+    if (estudiante->numMaterias < MAX_MATERIAS) {
+        strcpy(estudiante->materias[estudiante->numMaterias], materia);
+        estudiante->numMaterias++;
+    } else {
+        printf("Error: No se pueden agregar más materias.\n");
+    }
+}

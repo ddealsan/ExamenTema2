@@ -2,3 +2,10 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
+
+using namespace std;
+
+class AsistenciaInvalidaException : public runtime_error {
+public:
+    AsistenciaInvalidaException(const string& mensaje) : runtime_error(mensaje) {}
+};

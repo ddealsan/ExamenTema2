@@ -10,3 +10,11 @@ struct Asistencia {
     char materia[MAX_NOMBRE];
     char estado[MAX_NOMBRE];
 };
+
+struct Estudiante {
+    char nombre[MAX_NOMBRE];
+    int edad;
+    float promedio;
+    struct Asistencia asistencias[MAX_ASISTENCIAS];
+    int numAsistencias;
+};

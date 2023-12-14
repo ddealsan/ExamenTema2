@@ -12,3 +12,4 @@ struct Estudiante {
     char materias[MAX_MATERIAS][MAX_NOMBRE];
     int numMaterias;
 };
+

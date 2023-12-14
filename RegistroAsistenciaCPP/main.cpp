@@ -15,3 +15,11 @@ struct Estudiante{
     float promedio;
     vector<Asistencia> asistencias;
 };
+
+void mostrarEstudiante(Estudiante estudiante){
+    cout << "Nombre: " << estudiante.nombre << endl;
+    cout << "Edad: " << estudiante.edad << endl;
+    cout << "Promedio: " << estudiante.promedio << endl;
+    cout << "Asistencias: " << endl;
+
+}

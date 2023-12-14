@@ -14,3 +14,7 @@ add_executable(Ejercicio2
 add_executable(Ejercicio3
         ManejoDeExcepecionesC/main.c
 )
+
+add_executable(Ejercicio4
+        RegistroAsistenciaC/main.c
+)

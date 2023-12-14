@@ -10,3 +10,7 @@ add_executable(Ejercicio1
 add_executable(Ejercicio2
         GstionDelEstudianteC/main.c
 )
+
+add_executable(Ejercicio3
+        ManejoDeExcepecionesC/main.c
+)

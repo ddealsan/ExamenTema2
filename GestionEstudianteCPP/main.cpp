@@ -22,12 +22,12 @@ void mostrarEstudiante(Estudiante estudiante){
 }
 
 
-void agregarMateria(Estudiante& estudiante, const std::string& materia) {
+void agregarMateria(Estudiante& estudiante, const string& materia) {
     estudiante.materias.push_back(materia);
 }
 
-void eliminarMateria(Estudiante& estudiante, const std::string& materia) {
-    auto it = std::find(estudiante.materias.begin(), estudiante.materias.end(), materia);
+void eliminarMateria(Estudiante& estudiante, const string& materia) {
+    auto it = find(estudiante.materias.begin(), estudiante.materias.end(), materia);
     if (it != estudiante.materias.end()) {
         estudiante.materias.erase(it);
     }

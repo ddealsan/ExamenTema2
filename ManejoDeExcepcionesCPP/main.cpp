@@ -5,6 +5,8 @@
 
 using namespace std;
 
+struct Asistencia;
+
 class AsistenciaInvalidaException : public runtime_error {
 public:
     AsistenciaInvalidaException(const string& mensaje) : runtime_error(mensaje) {}
@@ -62,3 +64,12 @@ int main() {
 
         registrarAsistencia(estudiante1, "2023-01-02", "Historia", "falta");
         registrarAsistencia(estudiante1, "2023-01-03", "Programación", "tardanza");
+        mostrarEstudiante(estudiante1);
+    } catch (const EstudianteException& e) {
+        cerr << "Error en el estudiante: " << e.what() << endl;
+    } catch (const exception& e) {
+        cerr << "Error general: " << e.what() << endl;
+    }
+
+    return 0;
+}

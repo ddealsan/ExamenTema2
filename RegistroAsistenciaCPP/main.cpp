@@ -25,3 +25,8 @@ void mostrarEstudiante(Estudiante estudiante){
         cout << "Fecha: " << asistencia.fecha << " | Materia: " << asistencia.materia << " | Estado: " << asistencia.estado << endl;
     }
 }
+
+void registrarAsistencia(Estudiante& estudiante, const string& fecha, const string& materia, const string& estado) {
+    Asistencia nuevaAsistencia = {fecha, materia, estado};
+    estudiante.asistencias.push_back(nuevaAsistencia);
+}

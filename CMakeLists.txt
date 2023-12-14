@@ -11,3 +11,7 @@ add_executable (Ejercicio1
 add_executable(Ejercicio2
         GestionEstudianteCPP/main.cpp
 )
+
+add_executable(Ejercicio3
+        RegistroAsistenciaCPP/main.cpp
+)

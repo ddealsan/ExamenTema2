@@ -4,3 +4,9 @@
 
 #define MAX_ASISTENCIAS 10
 #define MAX_NOMBRE 50
+
+struct Asistencia {
+    char fecha[MAX_NOMBRE];
+    char materia[MAX_NOMBRE];
+    char estado[MAX_NOMBRE];
+};

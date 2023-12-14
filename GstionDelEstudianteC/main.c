@@ -46,3 +46,20 @@ void eliminarMateria(struct Estudiante* estudiante, const char* materia) {
     }
     printf("Error: La materia no se encontró.\n");
 }
+
+int main() {
+    struct Estudiante estudiante1;
+    strcpy(estudiante1.nombre, "Juan");
+    estudiante1.edad = 20;
+    estudiante1.promedio = 9.5;
+    estudiante1.numMaterias = 0;
+
+    agregarMateria(&estudiante1, "Matemáticas");
+    agregarMateria(&estudiante1, "Historia");
+    agregarMateria(&estudiante1, "Programación");
+    eliminarMateria(&estudiante1, "Historia");
+
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}

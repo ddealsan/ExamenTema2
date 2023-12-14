@@ -53,3 +53,12 @@ int main() {
         estudiante1.nombre = "Juan";
         estudiante1.edad = 20;
         estudiante1.promedio = 9.5;
+
+        try {
+            registrarAsistencia(estudiante1, "2023-01-02", "Historia", "asistio"); // Error de ortografía intencional
+        } catch (const AsistenciaInvalidaException& e) {
+            cerr << "Error al registrar asistencia: " << e.what() << endl;
+        }
+
+        registrarAsistencia(estudiante1, "2023-01-02", "Historia", "falta");
+        registrarAsistencia(estudiante1, "2023-01-03", "Programación", "tardanza");

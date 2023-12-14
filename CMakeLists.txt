@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 add_executable (Ejercicio1
-        Estructura del Estudiante C/main.cpp
+        EstructuraDelEstudianteCPP/main.cpp
 )

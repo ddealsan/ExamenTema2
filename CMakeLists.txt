@@ -8,5 +8,5 @@ add_executable(Ejercicio1
         EstructuraDelEstudianteC/main.c
 )
 add_executable(Ejercicio2
-        GstionDelEstudianteC/main.cpp
+        GstionDelEstudianteC/main.c
 )

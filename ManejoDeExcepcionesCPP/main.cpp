@@ -38,3 +38,11 @@ void mostrarEstudiante(const Estudiante& estudiante) {
     }
 }
 
+void registrarAsistencia(Estudiante& estudiante, const string& fecha, const string& materia, const string& estado) {
+    if (estado != "asistió" && estado != "falta" && estado != "tardanza") {
+        throw AsistenciaInvalidaException("Estado de asistencia inválido");
+    }
+
+    Asistencia nuevaAsistencia = {fecha, materia, estado};
+    estudiante.asistencias.push_back(nuevaAsistencia);
+}

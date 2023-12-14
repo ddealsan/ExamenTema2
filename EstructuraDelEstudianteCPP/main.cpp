@@ -14,7 +14,7 @@ void mostrarEstudiante(Estudiante estudiante){
     cout << "Edad: " << estudiante.edad << endl;
     cout << "Promedio: " << estudiante.promedio << endl;
 }
-
+//
 int main(){
     Estudiante estudiante1;
     estudiante1.nombre = "Juan";
